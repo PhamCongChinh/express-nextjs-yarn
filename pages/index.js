@@ -11,7 +11,7 @@ export default function Home() {
 
       <main>
         <h1>
-          Welcome to <a href="https://nextjs.org">Next.js Công Chính!</a>
+          Welcome to <a href="https://nextjs.org" className="text-lg text-red-600">Next.js Công Chính!</a>
         </h1>
       </main>
     </div>

@@ -10,7 +10,7 @@ const products = ({ products}) => {
         </div>
     )
 }
-export async function getStaticProps(context) {
+export async function getStaticProps() {
     const res = await new Promise((resolve, reject) => 
         pool.query('SELECT * FROM products', (err, results) => (err ? reject(err) : resolve(results)))
     )
