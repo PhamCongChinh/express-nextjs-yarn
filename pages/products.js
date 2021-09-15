@@ -1,12 +1,16 @@
 import React from 'react'
-const products = () => {
+import pool from '../utils/db'
+const products = ({ products}) => {
     return (
         <div>
             <h1>Sản phẩm</h1>
+            {products.map(item => (
+                <div key={item.id}>{item.name}</div>
+            ))}
         </div>
     )
 }
-/*export async function getStaticProps(context) {
+export async function getStaticProps(context) {
     const res = await new Promise((resolve, reject) => 
         pool.query('SELECT * FROM products', (err, results) => (err ? reject(err) : resolve(results)))
     )
@@ -14,5 +18,5 @@ const products = () => {
     return {
         props: { products },
     }
-}*/
+}
 export default products
