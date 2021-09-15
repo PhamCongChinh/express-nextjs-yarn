@@ -11,11 +11,6 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/categories">
-                        <a>Categories</a>
-                    </Link>
-                </li>
-                <li>
                     <Link href="/products">
                         <a>Products</a>
                     </Link>
